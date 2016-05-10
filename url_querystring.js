@@ -3,6 +3,7 @@
  */
 function $_GET(param) {
     var vars = {};
+    var src = location.href.toString();
     var hash = src.indexOf('#') >= 0 ? src.slice(src.indexOf('#')) : '';
     src && src.replace( hash , '' ).replace( 
         /[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
